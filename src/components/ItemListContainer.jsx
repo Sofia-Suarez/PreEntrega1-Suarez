@@ -9,7 +9,10 @@ const ItemListContainer = () => {
   }, [])
   return (
     <>
-    {}
+    id={Productos.id}
+    nombre={Productos.nombre}
+    descripcion={Productos.descripcion}
+    precio={Productos.precio}
      <ItemList data={data} />
     </>
   )
