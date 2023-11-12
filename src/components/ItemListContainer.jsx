@@ -1,12 +1,18 @@
-import React from 'react'
-import { Badge } from '@chakra-ui/react'
-
-const ItemListContainer = ({greeting}) => {
+import React, { useEffect, useState } from 'react'
+import ItemList from './ItemList'
+import { getProducts } from '../data/asyncMock'
+const ItemListContainer = () => {
+  const [data, setData] = useState([])
+  useEffect (() => {
+    getProducts()
+    .then((elem) => setData(elem))
+  }, [])
   return (
-    <div>
-        {greeting}
-    </div>
+    <>
+    {}
+     <ItemList data={data} />
+    </>
   )
 }
 
-export default ItemListContainer
+export default ItemListContainer 

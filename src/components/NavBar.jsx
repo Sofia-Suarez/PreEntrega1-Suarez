@@ -15,7 +15,8 @@ const NavBar = () => {
               </MenuButton>
               <MenuList>
                 <MenuItem>Restaurante</MenuItem>
-                <MenuItem>Academia</MenuItem>
+                <MenuItem>Cursos</MenuItem>
+                <MenuItem>Carreras</MenuItem>
                 <MenuItem>¡Trabaja con nosotros!</MenuItem>
               </MenuList>
             </Menu>
