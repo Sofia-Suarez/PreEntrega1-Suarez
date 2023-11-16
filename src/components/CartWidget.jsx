@@ -1,11 +1,12 @@
 import React from 'react'
 import { Badge } from '@chakra-ui/react'
+import { FaShoppingCart } from "react-icons/fa";
 
 const CartWidget = () => {
   return (
     <div>
-        <h3>Carrito</h3>
-        <Badge variant='solid' colorScheme='purple'>26</Badge>
+        <FaShoppingCart />
+        <Badge>26</Badge>
     </div>
   )
 }
