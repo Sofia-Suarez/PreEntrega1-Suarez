@@ -17,7 +17,11 @@ const NavBar = () => {
                 Categorías
               </MenuButton>
               <MenuList>
-                <MenuItem>Restaurante</MenuItem>
+                <MenuItem>
+                 <Link to="/restaurante">
+                 Restaurante
+                 </Link>
+                 </MenuItem>
                 <MenuItem>
                    Cursos
                 </MenuItem>
