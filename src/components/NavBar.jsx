@@ -7,7 +7,7 @@ const NavBar = () => {
     <div>
           <Flex>
             <Box p='20' bg='teal'>
-              <Link to={"/categorias/:categoryId"}>
+              <Link to="/">
                  Urban Food
               </Link>
             </Box>    
@@ -19,14 +19,10 @@ const NavBar = () => {
               <MenuList>
                 <MenuItem>Restaurante</MenuItem>
                 <MenuItem>
-                  <Link to='/categoria/curso'>
                    Cursos
-                  </Link>
                 </MenuItem>
                 <MenuItem>
-                  <Link to='/categorias/carreras'>
                    Carreras
-                  </Link>
                 </MenuItem>
               </MenuList>
             </Menu>
