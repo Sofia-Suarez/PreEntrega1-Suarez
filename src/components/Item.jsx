@@ -15,7 +15,7 @@ const Academia = ({id, nombre, imagen}) => {
     <Stack mt='6' spacing='3'>
       <Heading size='md'>{nombre} </Heading>
       <Button variant='solid' colorScheme='blue'>
-        <Link to="/item/:id">
+        <Link to={`/item/${id}`}>
           Ver detalle
         </Link>
       </Button>

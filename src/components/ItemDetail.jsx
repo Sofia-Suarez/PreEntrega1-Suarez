@@ -1,13 +1,13 @@
 import React from 'react'
-import {Card, CardBody, Image, Stack, Heading, Text, Divider, CardFooter, Box} from  '@chakra-ui/react'
+import {Card, CardBody, Image, Stack, Heading, Text, Divider, CardFooter} from  '@chakra-ui/react'
 import ItemCount from './ItemCount'
 
-const Academia = ({id, nombre, descripcion, precio, imagen}) => {
+const Academia = ({nombre, descripcion, precio, imagen}) => {
     return (
       <div>
        <Card maxW='sm'>
   <CardBody>
-    <Image
+  <Image
       src={imagen}
       alt="Imagen"
       borderRadius='lg'

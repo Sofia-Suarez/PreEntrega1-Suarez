@@ -22,11 +22,20 @@ const NavBar = () => {
                  Restaurante
                  </Link>
                  </MenuItem>
-                <MenuItem>
-                   Cursos
+                 <MenuItem>
+                <Link to="/academia">
+                   Academia
+                 </Link>
                 </MenuItem>
                 <MenuItem>
+                 <Link to="/academia/cursos">
+                   Cursos
+                 </Link>
+                </MenuItem>
+                <MenuItem>
+                <Link to="/academia/carreras">
                    Carreras
+                 </Link>
                 </MenuItem>
               </MenuList>
             </Menu>
