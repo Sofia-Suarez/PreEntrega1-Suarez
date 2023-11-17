@@ -1,22 +1,23 @@
 import React, { useEffect, useState } from 'react'
 import Item from './Item'
 // import ItemList from './ItemList'
-import { getAcademia } from '../data/asyncMock'
+import { getAcademia, getAcademiaByCategory } from '../data/asyncMock'
 import { useParams } from 'react-router-dom'
 const ItemListContainer = () => {
   const [data, setData] = useState([])
   const categoria = useParams().categoria
   console.log (categoria)
   useEffect (() => {
-    getAcademia()
-    .then((elem) => {
-      if (categoria) {
-        setData (elem.filter((prod) => prod.categoria === categoria))
-      } else {
+    if (categoria) {
+      getAcademiaByCategory(categoria)
+      .then((elem) => setData (elem))
+    } else {
+      getAcademia()
+      .then((elem) => {
         setData(elem)
-      }
-    })
-  }, [categoria])
+      })
+    }
+  },[categoria])
   return (
     <>
     <Item {...data}/>   

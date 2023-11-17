@@ -1,9 +1,9 @@
 const Academia = [
-    {id:1, nombre: "General", descripcion: "Descripción de General", precio: "$1000", categoria:"Curso", imagen:"src/assets/imagen1.png"},
-    {id:2, nombre: "Pastelería", descripcion: "Descripción de Pasteleria", precio: "$1500", categoria:"Curso",imagen:"src/assets/imagen2.png"},
-    {id:3, nombre: "Panes", descripcion: "Descripción de Panes", precio: "$2000", categoria:"Curso", imagen:"src/assets/imagen3.png"},
-    {id:4, nombre: "Gastronomia", descripcion: "Descripción de Gastronomia", precio: "$1000", categoria:"Carrera", imagen:"src/assets/imagen4.png"},
-    {id:5, nombre: "Pasteleria profesional", descripcion: "Descripción de Pasteleria profesional", precio: "$1500", categoria:"Carrera", imagen:"src/assets/imagen5.png"},
+    {id:1, nombre: "General", descripcion: "Descripción de General", precio: "$1000", categoria:"Cursos", imagen:"../../src/assets/imagen1.png"},
+    {id:2, nombre: "Pastelería", descripcion: "Descripción de Pasteleria", precio: "$1500", categoria:"Cursos",imagen:"../../src/assets/imagen2.png"},
+    {id:3, nombre: "Panes", descripcion: "Descripción de Panes", precio: "$2000", categoria:"Cursos", imagen:"../../src/assets/imagen3.png"},
+    {id:4, nombre: "Gastronomia", descripcion: "Descripción de Gastronomia", precio: "$1000", categoria:"Carreras", imagen:"../../src/assets/imagen4.png"},
+    {id:5, nombre: "Pasteleria profesional", descripcion: "Descripción de Pasteleria profesional", precio: "$1500", categoria:"Carreras", imagen:"../../src/assets/imagen5.png"},
     ]
 export const getAcademia =() => {
     return new Promise ((resolve) => {
