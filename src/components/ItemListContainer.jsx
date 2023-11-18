@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import Item from './Item'
-// import ItemList from './ItemList'
+import ItemList from './ItemList'
 import { getAcademia, getAcademiaByCategory } from '../data/asyncMock'
 import { useParams } from 'react-router-dom'
 const ItemListContainer = () => {
@@ -10,17 +9,17 @@ const ItemListContainer = () => {
   useEffect (() => {
     if (categoria) {
       getAcademiaByCategory(categoria)
-      .then((elem) => setData (elem))
+      .then((Academia) => setData (Academia))
     } else {
       getAcademia()
-      .then((elem) => {
-        setData(elem)
+      .then((Academia) => {
+        setData(Academia)
       })
     }
   },[categoria])
   return (
     <>
-    <Item {...data}/>   
+    <ItemList data={data}/>   
      </>
   )
  }
